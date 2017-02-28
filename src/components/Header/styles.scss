@@ -1,0 +1,20 @@
+.header-color {
+
+    &--violet {
+        background-color: #03A9F4 !important;
+    }
+}
+
+
+.text-field {
+    
+    &--custom {
+        & > div {
+            color: white !important;
+        }
+
+        input {
+            color: white !important;
+        }
+    }
+}

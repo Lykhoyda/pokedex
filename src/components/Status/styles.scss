@@ -1,0 +1,30 @@
+.root {
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.root :global p {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.root :global img {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.active {
+  background-color: wheat;
+  width: 100%;
+  height: 100%
+}

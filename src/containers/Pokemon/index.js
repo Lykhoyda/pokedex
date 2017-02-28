@@ -24,14 +24,6 @@ class Pokemon extends Component {
 		requests.push(actions.fetchPokemon(name));
   	}
 
-	dynamicPokemonChangeHandler (id) {
-		if (id === this.context.router.params.id) return;
-			this.context.router.push({
-				pathname: '/pokemon/'+ id
-			});
-		this.setPokemonByName(id);
-  	}
-
 	componentDidMount() {
 		const { id } = this.props.params;
 
